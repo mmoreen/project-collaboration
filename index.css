@@ -1,8 +1,8 @@
 Header{
     text-align: center;
     font-size: xx-large;
-     background-color: rgb(240, 179, 240);
-}
+     background-color: rosybrown;
+     }
 
 .auto-style2{
     text-align: left;
@@ -14,3 +14,15 @@ Header{
 .auto-style3{
     color:black;
 }
+p{
+    text-align: center;
+}
+
+footer{
+    background-color: azure;
+}
+
+
+
+
+
