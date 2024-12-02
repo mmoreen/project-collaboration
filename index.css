@@ -1,7 +1,6 @@
 Header{
     text-align: center;
     font-size: xx-large;
-     background-color: rosybrown;
      }
 
 .auto-style2{
@@ -20,6 +19,9 @@ p{
 
 footer{
     background-color: azure;
+}
+body{
+    background-image: url(images/woman.jpg);
 }
 
 
