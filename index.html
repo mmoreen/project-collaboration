@@ -3,61 +3,312 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/public/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/public/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/public/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="/public/favicon_io/site.webmanifest">
+
   <title>Black Friday</title>
 
-  <link rel="stylesheet" href="./index.css" />
+  <link rel="stylesheet" href="/src/styles.css">
 
 </head>
 
 
-<body>
-
-  <header>
+<body class="">
+  <header class="flex justify-between bg-slate-900 w-full h-15 text-gray-200 p-2 fixed">
+    <div class="w-10 h-10 flex gap-4">
+      <img src="/public/favicon_io/android-chrome-512x512.png" alt="">
+      <span>Black Friday</span>
+    </div>
+    
     <nav>
-     <a href="./pages/EventDetails.html" target="_blank">Event Details</a>
-     <a href="./pages/EventsAgenda.html" target="_blank">Events Agenda</a>
-     <a href="./pages/GuestSpeakers.html" target="_blank">Guest Speakers</a>
-     
-     
-
+      <ul class="hidden md:flex gap-4 pt-2 pr-2" id="menuList">
+        <li class="hover:bg-pink-500 hover:rounded-xl hover:p-2 ">
+          <a href="#section1">Home</a>
+        </li>
+        <li class="hover:bg-pink-500 hover:rounded-xl hover:p-2 ">
+          <a href="#section2">Details</a>
+        </li>
+        <li class="hover:bg-pink-500 hover:rounded-xl hover:p-2 ">
+          <a href="#section3">Agenda</a>
+        </li>
+        <li class="hover:bg-pink-500 hover:rounded-xl hover:p-2 ">
+          <a href="#section4">Book</a>
+        </li>
+      </ul>  
+      <img src="/images/menu.png" alt="menu" class="w-10 h-8 bg-slate-50 md:hidden" id="menuIcon">    
     </nav>
   </header>
   <hr>
+  <main class="" id="section1">
+    <div class="bg-[url('/images/hopper.jpg')] bg-center  h-96 flex place-content-center place-items-center"> 
+      <div class="md:w-96 w-60 md:h-28 items-center  flex  bg-slate-600 opacity-90 md:rounded-3xl rounded-lg">
+        <p class="text-center text-slate-100 md:text-4xl">
+          WELCOME TO BLACK FRIDAY EVENTS
+        </p>
+      </div>
+    </div>
+    <br>
+    <div class="md:flex">
+      <div class="flex pl-4 border gap-2">
+        <img src="/images/track.png" alt="track" class="md:w-20 md:h-20 w-8 h-8 animate-bounce">
+        <div class="md:p-4">
+          <p class="md:text-xl font-bold">Free Delivery</p>
+          <p>On Orders above 2m Ugshs.</p>
+        </div>
+      </div>
 
-  <main>
-    <h1>BLACK FRIDAY IS HERE!</h1>
-<img src="images/ladies.jpg" alt="ladies">
-    
-    <h2 >WELCOME TO BLACK FRIDAY EVENTS</h2>
+      <div class="flex pl-4 border gap-2">
+        <img src="/images/returns.png" alt="track" class="md:w-20 md:h-20 w-8 h-8 animate-pulse">
+        <div class="md:p-4">
+          <p class="md:text-xl font-bold">Easy Returns</p>
+          <p>7 Days free returns</p>
+        </div>
+      </div>
 
-      
-      <p>
-        Get ready for the biggest shopping event of the year! This <strong> Black Friday</strong>,
-        we’re rolling out the red carpet for our valued customers with
-        jaw-dropping discounts on your favorite products. From electronics to
-        fashion and home essentials, you’ll find incredible deals that you won’t
-        want to miss.
-      </p>
+      <div class="flex pl-4 border gap-2">
+        <img src="/images/quality.png" alt="track" class="md:w-20 md:h-20 w-8 h-8 animate-pulse">
+        <div class="md:p-4">
+          <p class="md:text-xl font-bold">High Quality</p>
+          <p>Premium quality products</p>
+        </div>
+      </div>
 
-      <h1>RSVP SECTION</h1>
-      <form>
-        Name: <input type = "text" name = "Name" />
+      <div class="flex pl-4 border gap-2">
+        <img src="/images/guarante.png" alt="track" class="md:w-20 md:h-20 w-8 h-8 animate-pulse">
+        <div class="md:p-4">
+          <p class="md:text-xl font-bold">Security Guarantee</p>
+          <p>100% Secured shopping experience</p>
+        </div>
+      </div>
+
+    </div>
+    <br>
+    <div class="p-6 " id="section2">
+      <div class="md:flex justify-between bg-slate-200">
+        <img src="/images/kim.jpg" alt="kim" class="md:w-96 ">
+        <div>
+          <div>
+            <p class="md:text-5xl text-xl text-center font-bold">
+              Capital Shoppers
+            </p>
+            <p class="border border-gray-800 "></p>
+            <p class="md:text-4xl text-center">
+              Presents Black Friday
+            </p>
+           
+            <p class="md:p-4 md:text-xl text-center">
+              Every Friday of November 2024
+            </p>
+            <p class="md:p-4 md:text-xl text-center ">
+              Ends 13th December 2024
+            </p>
+          </div>
+          <br>
+          <div class="flex gap-2">
+            <img src="/images/announcement.png" alt="announcement" class="md:w-20 w-10 h-10">
+            <div>
+              <p class="md:text-3xl text-sm font-bold">
+                Big announcement at 2pm every Black Friday
+              </p>
+              <p class="md:text-xl text-sm">
+                Be ready for the big gift for the lucky winner
+              </p>
+            </div>
+          </div>
+          <br>
+          <p class="border border-gray-800 "></p>
+          <div>
+            <div class="flex p-2 gap-4">
+              <img src="/images/sponsor.png" alt="sponsor" class="w-10">
+              <p>
+                Sponsored by:  
+              </p>
+            </div>
+            <div class="flex gap-2 justify-evenly">
+              <img src="/images/balenciaga.jpg" alt="balenciaga" class="md:w-20 md:h-20 w-5 h-5">
+              <img src="/images/dior.jpg" alt="balenciaga" class="md:w-20 md:h-20 w-5 h-5">
+              <img src="/images/fendi.jpg" alt="balenciaga" class="md:w-20 md:h-20 w-5 h-5">
+              <img src="/images/guci.jpg" alt="balenciaga" class="md:w-20 md:h-20 w-5 h-5">
+              <img src="/images/chanel.jpg" alt="balenciaga" class="md:w-20 md:h-20 w-5 h-5">
+              <img src="/images/hermes.jpg" alt="balenciaga" class="md:w-20 md:h-20 w-5 h-5">
+              <img src="/images/prada.jpg" alt="balenciaga" class="md:w-20 md:h-20 w-5 h-5">
+              <img src="/images/luisvuiton.jpg" alt="balenciaga" class="md:w-20 md:h-20 w-5 h-5">
+              <img src="/images/dolce.jpg" alt="balenciaga" class="md:w-20 md:h-20 w-5 h-5">
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <br>
+
+<!--Events Agenda-->
+    <div class="p-4" id="section3">
+        <p class="text-center text-4xl  underline">
+          Event Agenda
+        </p>
         <br>
-        Email: <input type = "text" name = "Email" />
-        <br>
+          <table class="table-auto w-full border-collapse border-gray-300">
+            <thead> 
+              <tr> 
+                <th class="border border-gray-300 px-4 py-2">Time</th>
+                <th class="border border-gray-300 px-4 py-2">Event</th> 
+                <th class="border border-gray-300 px-4 py-2">Comments</th> 
+              </tr> 
+            </thead> 
+            <tbody> 
+              <tr> 
+                <td class="border border-gray-300 px-4 py-2">14:00</td> 
+                <td class="border border-gray-300 px-4 py-2">Welcoming Guests</td> 
+                <td class="border border-gray-300 px-4 py-2">Guests ushered in</td> 
+              </tr> 
+              <tr> 
+                <td class="border border-gray-300 px-4 py-2">15:00</td> 
+                <td class="border border-gray-300 px-4 py-2">Shopping</td> 
+                <td class="border border-gray-300 px-4 py-2">Guests shopping</td> 
+              </tr> 
+              <tr> 
+                <td class="border border-gray-300 px-4 py-2">16:00</td> 
+                <td class="border border-gray-300 px-4 py-2">Speeches</td> 
+                <td class="border border-gray-300 px-4 py-2">Speeches delivered</td> 
+              </tr> 
+              <tr> 
+                <td class="border border-gray-300 px-4 py-2">17:00</td> 
+                <td class="border border-gray-300 px-4 py-2">Gift Unwrapping</td> 
+                <td class="border border-gray-300 px-4 py-2">Gifts unwrapped</td> </tr>
+          </table>
+    </div>
+<!--Guest Speaker-->
+    <div class="p-4">
+      <p class="text-4xl font-bold text-center underline p-4 shadow-2xl">Guest Speakers</p>
+       <p class="border "></p>
 
-      Attendance Confirmation: <input type = "text" name = "Attendance Confirmation" />
-      </form>
-
-  </main>
-<hr>
-
-<footer>
-<p>$ 2024 all rights reserved</p>
-
-</footer>
-
+       <div class="md:flex gap-2">
+        <div class="md:flex gap-10">
+          <img src="/images/man in suit.jpg" alt="man" class="md:w-50 md:h-52">
+          <div class="p-2">
+            <p class="text-2xl font-bold">Mr. Kintu Joseph</p>
+            <p class="text-xl font-semibold">Sales Manager</p>
+            <p class="text-xl ">UMA grounds Kampala</p>
   
+            <div class="flex gap-2 p-2">
+              <img src="/images/instgram.png" alt="instagram" class="w-8">
+              <img src="/images/twitter.png" alt="twitter" class="w-8 ">
+              <img src="/images/facebook.png" alt="instagram" class="w-8 ">
+            </div>
+          </div>
+        </div>
+  
+        <div class="md:flex gap-4">
+          <img src="/images/lady.jpg" alt="man" class="md:w-50 md:h-52">
+          <div class="p-2">
+            <p class="text-2xl font-bold">Mrs. Onita Winnie</p>
+            <p class="text-xl font-semibold">Operations Officer</p>
+            <p class="text-xl ">UMA grounds Kampala</p>
+  
+            <div class="flex gap-2 p-2">
+              <img src="/images/instgram.png" alt="instagram" class="w-8">
+              <img src="/images/twitter.png" alt="twitter" class="w-8 ">
+              <img src="/images/facebook.png" alt="instagram" class="w-8 ">
+            </div>
+          </div>
+        </div>
+       </div>
+      
+    </div>
+<!--Registration Form-->
+    <div class="bg-[url('/images/shop.jpg')] bg-cover md:flex
+       text-gray-100 p-6 round-md shadow-2xl gap-4" id="section4">
+      <h1 class=" text-3xl mb-6 animate-pulse text-center">
+        Black Friday Booking Form
+      </h1>
+      
+      <p class="border border-double bg-slate-400 bg-opacity-50"></p>
+      <br>
+      <form action="" class="border bg-slate-500 bg-opacity-50 p-6 rounded-2xl pl-6">
+        <div class="mb-4 pl-6"> 
+          <label class="">Name</label> 
+          <input type="text" class="mt-1 block md:w-80 p-2 border border-gray-300 rounded" placeholder="Your Name"> 
+        </div>
+
+        <div class="mb-4 pl-6"> 
+          <label class="">Gender</label> 
+          <input type="text" class="mt-1 block md:w-80 p-2 border border-gray-300 rounded" placeholder="Gender"> 
+        </div>
+
+        <div class="mb-4 pl-6"> 
+          <label class="">Email</label> 
+          <input type="text" class="mt-1 block md:w-80 p-2 border border-gray-300 rounded" placeholder="Email"> 
+        </div>
+         
+        <div class="flex justify-center"> 
+          <button class="bg-gray-100 text-gray-900 py-2 px-4 rounded">
+            Submit
+          </button>
+        </div>
+      </form>
+    <div> 
+  </main>
+  <br>
+  <footer class=" bg-slate-600 md:flex justify-between p-4 text-gray-100">
+    <div class="">
+      <p class="text-xl font-bold underline">Capital Shoppers</p>
+      <p>UMA Show Grounds</p>
+      <p>P.O Box 23, Kampala</p>
+      <br>
+      <p>2024 All rights reserved</p>
+    </div>
+    
+    <div>
+      <p class="text-xl font-bold underline">Navigation</p>
+      <p><a href="#section1">Home</a></p>
+      <p><a href="#section2">Details</a></p>
+      <p><a href="#section3">Agenda</a></p>
+      <p><a href="#section4">Book</a></p>
+      <br>
+      
+    </div>
+    <div>
+      <p class="text-xl font-bold underline">Contact</p>
+      <div class="p-2">
+        <div class="flex gap-2">
+          <img src="/images/instgram.png" alt="instagram" class="w-8 p-1">
+          <span>@capital-shopers</span>
+        </div>
+        
+        <div class="flex gap-2">
+          <img src="/images/twitter.png" alt="twitter" class="w-8 p-1">
+          <span>@capital-shopers</span>
+        </div>
+        
+        <div class="flex gap-2">
+          <img src="/images/facebook.png" alt="instagram" class="w-8 p-1">
+          <span>capital-shopers</span>
+        </div>
+        
+      </div>
+      <div class="flex gap-2">
+        <img src="/images/call.png" alt="call" class="w-8">
+        <p>+256-312-006-000</p>
+      </div>
+    </div>
+    <div>
+      <p class="text-xl font-bold underline">
+        FAQ
+      </p>
+      <div>
+        <p>1. Where is Capital Shoppers found?</p>
+        <p>2. When is Black Friday beginning?</p>
+        <p>3. Where is Black Friday ending?</p>
+        <p>4. Are there gifts to win?</p>
+      </div>
+    </div>
+  
+  </footer>
+  <script src="/public/index.js"></script>
 </body>
 </html>
  
