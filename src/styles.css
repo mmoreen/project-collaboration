@@ -606,6 +606,10 @@ video {
   height: 24rem;
 }
 
+.h-32 {
+  height: 8rem;
+}
+
 .w-10 {
   width: 2.5rem;
 }
@@ -624,6 +628,14 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-3 {
+  width: 0.75rem;
+}
+
+.w-32 {
+  width: 8rem;
 }
 
 .table-auto {
@@ -706,6 +718,10 @@ video {
 
 .rounded-lg {
   border-radius: 0.5rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 
 .border {
@@ -894,6 +910,31 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.hover\:w-1:hover {
+  width: 0.25rem;
+}
+
+.hover\:w-12:hover {
+  width: 3rem;
+}
+
+.hover\:rounded-xl:hover {
+  border-radius: 0.75rem;
+}
+
+.hover\:bg-pink-500:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(236 72 153 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:p-4:hover {
+  padding: 1rem;
+}
+
+.hover\:p-2:hover {
+  padding: 0.5rem;
+}
+
 @media (min-width: 768px) {
   .md\:flex {
     display: flex;
@@ -909,6 +950,14 @@ video {
 
   .md\:h-28 {
     height: 7rem;
+  }
+
+  .md\:h-52 {
+    height: 13rem;
+  }
+
+  .md\:h-5 {
+    height: 1.25rem;
   }
 
   .md\:w-20 {
